@@ -20,5 +20,10 @@
   "license": "ISC",
   "dependencies": {
     "prop-types": "^15.7.2"
+  },
+  "devDependencies": {
+    "metro-react-native-babel-preset": "^0.58.0",
+    "react": "^16.13.0",
+    "react-native": "^0.61.5"
   }
 }

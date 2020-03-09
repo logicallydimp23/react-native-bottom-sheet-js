@@ -21,8 +21,6 @@ const styles = StyleSheet.create({
   },
   sheetContent: {
     width: '100%',
-    minHeight: 56,
-    maxHeight: Dimensions.get('window').height / 2,
   },
 })
 
@@ -57,9 +55,21 @@ class BottomSheet extends Component {
   }
 
   renderChildren = () => {
-    const { children } = this.props;
+    const {
+      children,
+      minHeight,
+      maxHeight,
+      contentStyle,
+    } = this.props;
     return (
-      <View style={styles.sheetContent}>
+      <View
+        style={{
+          width: '100%',
+          minHeight,
+          maxHeight,
+          ...contentStyle,
+        }}
+      >
         {children}
       </View>
     )
@@ -68,8 +78,11 @@ class BottomSheet extends Component {
   render() {
     const {
       expanded,
-      backgroundColor,
     } = this.state;
+
+    const {
+      backgroundColor,
+    } = this.props;
     return (
       <View
         style={[

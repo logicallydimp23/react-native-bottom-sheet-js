@@ -72,13 +72,7 @@ class ActionSheet extends Component {
     } = this.state;
     return (
       <View
-        style={[
-          styles.container,
-          // eslint-disable-next-line react-native/no-inline-styles
-          {
-            padding: expanded ? 20 : 0,
-          },
-        ]}
+        style={styles.container}
       >
         {expanded && this.renderChildren()}
       </View>

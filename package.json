@@ -1,6 +1,6 @@
 {
   "name": "react-native-bottom-sheet-js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A bottom sheet that uses Material sheets #specs. Written in pure JS.",
   "main": "index.js",
   "scripts": {

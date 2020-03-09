@@ -100,10 +100,16 @@ class BottomSheet extends Component {
 
 BottomSheet.propTypes = {
   backgroundColor: PropTypes.string,
+  minHeight: PropTypes.number,
+  maxHeight: PropTypes.number,
+  contentStyle: PropTypes.object,
 }
 
 BottomSheet.defaultProps = {
-  backgroundColor: '#ffffff'
+  backgroundColor: '#ffffff',
+  minHeight: 56,
+  maxHeight: Dimensions.get('window').height / 2,
+  contentStyle: {},
 }
 
 export default BottomSheet;

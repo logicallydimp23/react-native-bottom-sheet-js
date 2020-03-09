@@ -1,0 +1,16 @@
+{
+  "name": "react-native-bottom-sheet",
+  "version": "0.0.1",
+  "description": "A bottom sheet that uses Material sheets #specs. Written in pure JS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native-sheet",
+    "react-native-bottom-sheet",
+    "react-native"
+  ],
+  "author": "Steve",
+  "license": "ISC"
+}

@@ -31,7 +31,7 @@ if (Platform.OS === 'android' && UIManager.setLayoutAnimationEnabledExperimental
   UIManager.setLayoutAnimationEnabledExperimental(true);
 }
 
-class ActionSheet extends Component {
+class BottomSheet extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -45,7 +45,7 @@ class ActionSheet extends Component {
     LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut)
   }
 
-  open = data => {
+  open = () => {
     this.setState({
       expanded: true,
     })
@@ -80,4 +80,4 @@ class ActionSheet extends Component {
   }
 }
 
-export default ActionSheet;
+export default BottomSheet;

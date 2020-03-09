@@ -69,7 +69,6 @@ class ActionSheet extends Component {
   render() {
     const {
       expanded,
-      children
     } = this.state;
     return (
       <View
@@ -81,7 +80,7 @@ class ActionSheet extends Component {
           },
         ]}
       >
-        {expanded && children}
+        {expanded && this.renderChildren()}
       </View>
     )
   }

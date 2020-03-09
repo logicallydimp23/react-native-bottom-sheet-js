@@ -9,12 +9,11 @@ import {
   Dimensions,
 } from 'react-native'
 
-import { COLOR } from '@themes';
+import PropTypes from 'prop-types'
 
 const styles = StyleSheet.create({
   container: {
     width: '100%',
-    backgroundColor: COLOR.LIGHT,
     position: 'absolute',
     bottom: 0,
     borderTopLeftRadius: 6,
@@ -69,15 +68,29 @@ class BottomSheet extends Component {
   render() {
     const {
       expanded,
+      backgroundColor,
     } = this.state;
     return (
       <View
-        style={styles.container}
+        style={[
+          styles.container,
+          {
+            backgroundColor,
+          },
+        ]}
       >
         {expanded && this.renderChildren()}
       </View>
     )
   }
+}
+
+BottomSheet.propTypes = {
+  backgroundColor: PropTypes.string,
+}
+
+BottomSheet.defaultProps = {
+  backgroundColor: '#ffffff'
 }
 
 export default BottomSheet;

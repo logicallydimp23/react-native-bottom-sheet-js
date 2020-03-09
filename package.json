@@ -1,16 +1,21 @@
 {
   "name": "react-native-bottom-sheet-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A bottom sheet that uses Material sheets #specs. Written in pure JS.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/logicallydimp23/react-native-bottom-sheet-js.git"
   },
   "keywords": [
     "react-native-sheet",
     "react-native-bottom-sheet",
     "react-native"
   ],
+  "homepage": "https://github.com/logicallydimp23/react-native-bottom-sheet-js",
   "author": "Steve",
   "license": "ISC"
 }

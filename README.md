@@ -22,11 +22,15 @@ import BottomSheet from 'react-native-bottom-sheet-js'
 // To open sheet do
 this.bottomSheet.open()
 
-<BottomSheet
-  ref={bottomSheet => { this.bottomSheet = bottomSheet }}
->
-  <Text>This is the content that will display when the bottom sheet is open.</Text>
-</BottomSheet>
+// Put at the very bottom of the screen file
+<View>
+  {/* Other content here. */}
+  <BottomSheet
+    ref={bottomSheet => { this.bottomSheet = bottomSheet }}
+  >
+    <Text>This is the content that will display when the bottom sheet is open.</Text>
+  </BottomSheet>
+</View>
 ```
 
 ### Methods

@@ -24,7 +24,6 @@ const styles = StyleSheet.create({
     width: '100%',
     minHeight: 56,
     maxHeight: Dimensions.get('window').height / 2,
-    padding: 5,
   },
 })
 
